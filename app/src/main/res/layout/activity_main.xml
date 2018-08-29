@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblMail" />
+
+        <EditText
+            android:id="@+id/edtMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="E-mail" />
+
+        <TextView
+            android:id="@+id/tvCuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblCuit" />
+
+        <EditText
+            android:id="@+id/edtCuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Number" />
+
+        <TextView
+            android:id="@+id/tvMoneda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblMoneda" />
+
+        <RadioGroup
+            android:id="@+id/optMoneda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/optDolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblDolar" />
+
+            <RadioButton
+                android:id="@+id/optPeso"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblPeso" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/lblMontoAInvertir"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <EditText
+        android:id="@+id/edtMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Number"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <TextView
+        android:id="@+id/tvDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDiasInversion"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <SeekBar
+        android:id="@+id/seekDias"
+        android:layout_width="373dp"
+        android:layout_height="33dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <TextView
+        android:id="@+id/tvDiasSeleccionados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDiasSeleccionados"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <TextView
+        android:id="@+id/tvIntereses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="334dp">
+
+        <TextView
+            android:id="@+id/tvAvisarVencimiento"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lblAvisarVencimiento" />
+
+        <Switch
+            android:id="@+id/swAvisarVencimiento"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/togAccion"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Acreditar en Cuenta"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="361dp"
+        android:textOn="@string/lblAccionVencimientoRenovar"
+        android:textOf="@string/lblAccionVencimientoAcreditar"/>
+
+    <CheckBox
+        android:id="@+id/chkAceptoTerminos"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblAceptarTerminos"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <Button
+        android:id="@+id/btnHacerPF"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblHacerPF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="489dp"
+        android:layout_weight="1"
+        android:maxLines="6"/>
+
+</android.support.constraint.ConstraintLayout>
